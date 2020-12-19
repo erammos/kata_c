@@ -1,5 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+typedef struct 
+{
+ int x;
+ int y;
+ int width;
+ int height;
+} rectangle;
+
 //I've provided "min" and "max" functions in
 //case they are useful to you
 int min (int a, int b) {
@@ -20,11 +29,54 @@ int max (int a, int b) {
 
 rectangle canonicalize(rectangle r) {
   //WRITE THIS FUNCTION
+ 
+  if(r.width < 0)
+   { r.x = r.x + r.width;
+      r.width = -r.width;
+  }
+  if(r.height < 0)
+  {r.y = r.y + r.height;
+     r.height = - r.height;
+  }
+  
   return r;
 }
 rectangle intersection(rectangle r1, rectangle r2) {
   //WRITE THIS FUNCTION
-  return r1;
+  r1 = canonicalize(r1);
+  r2 = canonicalize(r2);
+  rectangle new_r;
+
+  int r1_l = r1.x;
+  int r1_b = r1.y;
+  int r1_r = r1.x + r1.width;
+  int r1_t = r1.y + r1.height;
+ 
+  int r2_l = r2.x;
+  int r2_b = r2.y;
+  int r2_r = r2.x + r2.width;
+  int r2_t = r2.y + r2.height;
+// printf("** r1: %d %d %d %d %d r2: %d %d %d\n", r1.x,r1.y, r1.width,r1.height, r2.x,r2.y,r2.width,r2.height);
+// printf("**r1: %d %d %d %d  r2: %d %d %d %d\n", r1_l,r1_b, r1_r,r1_t,r2_l,r2_b,r2_r,r2_t);
+ int l_max = max(r1_l,r2_l);
+ int r_min = min(r1_r,r2_r);
+ int b_max = max(r1_b,r2_b);
+ int t_min = min(r1_t,r2_t);
+
+  new_r.x = l_max;
+  new_r.y = b_max;
+  new_r.width =  0;
+  new_r.height = 0;
+
+//printf("l_max %d b_max %d r_min %d t_min %d\n",l_max, b_max,r_min, t_min); 
+ if(l_max <= r_min && b_max <= t_min)
+{
+
+  new_r.width = r_min - l_max;
+  new_r.height = t_min - b_max;
+   
+}  
+  return new_r;
 }
 
 //You should not need to modify any code below this line
