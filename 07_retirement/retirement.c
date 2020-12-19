@@ -67,5 +67,5 @@ int main()
 
  retirement(327,21345.0,working,retired);
  
-  
+ return 0;
 }
