@@ -5,28 +5,28 @@
 #define VALUE_QUEEN 12
 #define VALUE_JACK 11
 typedef enum {
-  SPADES,
-  HEARTS,
-  DIAMONDS,
-  CLUBS,
-  NUM_SUITS
+    SPADES,
+    HEARTS,
+    DIAMONDS,
+    CLUBS,
+    NUM_SUITS
 } suit_t;
 
 struct card_tag {
-  unsigned value;
-  suit_t suit;
+    unsigned value;
+    suit_t suit;
 };
 typedef struct card_tag card_t;
 typedef enum {
-  STRAIGHT_FLUSH,
-  FOUR_OF_A_KIND,
-  FULL_HOUSE,
-  FLUSH,
-  STRAIGHT,
-  THREE_OF_A_KIND,
-  TWO_PAIR,
-  PAIR,
-  NOTHING
+    STRAIGHT_FLUSH,
+    FOUR_OF_A_KIND,
+    FULL_HOUSE,
+    FLUSH,
+    STRAIGHT,
+    THREE_OF_A_KIND,
+    TWO_PAIR,
+    PAIR,
+    NOTHING
 } hand_ranking_t;
 card_t card_from_num(unsigned c);
 void assert_card_valid(card_t c);
