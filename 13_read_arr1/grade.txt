@@ -1,0 +1,15 @@
+Grading at Sat Dec 26 19:05:41 UTC 2020
+Attempting to compile test.c
+gcc -o test -pedantic -std=gnu99 -Wall -Werror=return-type test.c
+compiled
+I expected to find a file called 'answer.txt' but it did not exist
+(or was not a regular file)
+Here are the files that I can find:
+Makefile
+output.txt
+README
+test
+test.c
+Your output did not match what we expected.
+
+Overall Grade: F
