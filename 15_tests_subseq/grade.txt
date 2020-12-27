@@ -1,0 +1,112 @@
+Grading at Sun Dec 27 21:50:13 UTC 2020
+**Testing broken implementation 10 **
+-------------------------------------
+
+num 5 res 3 check 5
+num 0 res 0 check 0
+num 3 res 1 check 1
+num 9 res 2 check 2
+num 1 res 1 check 1
+
+**Testing broken implementation 11 **
+-------------------------------------
+
+num 5 res 5 check 5
+num 0 res 0 check 0
+num 3 res 2 check 1
+num 9 res 3 check 2
+num 1 res 2 check 1
+
+**Testing broken implementation 1 **
+-------------------------------------
+
+num 5 res 5 check 5
+num 0 res 0 check 0
+num 3 res 3 check 1
+num 9 res 6 check 2
+num 1 res 1 check 1
+
+**Testing broken implementation 2 **
+-------------------------------------
+
+num 5 res 5 check 5
+num 0 res 1 check 0
+num 3 res 1 check 1
+num 9 res 1 check 2
+num 1 res 1 check 1
+
+**Testing broken implementation 3 **
+-------------------------------------
+
+num 5 res 6 check 5
+num 0 res 0 check 0
+num 3 res 1 check 1
+num 9 res 2 check 2
+num 1 res 2 check 1
+
+**Testing broken implementation 4 **
+-------------------------------------
+
+num 5 res 5 check 5
+num 0 res 1 check 0
+num 3 res 1 check 1
+num 9 res 2 check 2
+num 1 res 1 check 1
+
+**Testing broken implementation 5 **
+-------------------------------------
+
+num 5 res 5 check 5
+num 0 res 0 check 0
+num 3 res 1 check 1
+num 9 res 3 check 2
+num 1 res 1 check 1
+
+**Testing broken implementation 6 **
+-------------------------------------
+
+num 5 res 5 check 5
+num 0 res 0 check 0
+num 3 res 0 check 1
+num 9 res 2 check 2
+num 1 res 0 check 1
+
+**Testing broken implementation 7 **
+-------------------------------------
+
+num 5 res 4 check 5
+num 0 res 0 check 0
+num 3 res -1 check 1
+num 9 res -1 check 2
+num 1 res 0 check 1
+
+**Testing broken implementation 8 **
+-------------------------------------
+
+num 5 res 1 check 5
+num 0 res 0 check 0
+num 3 res 1 check 1
+num 9 res 1 check 2
+num 1 res 1 check 1
+
+**Testing broken implementation 9 **
+-------------------------------------
+
+num 5 res 5 check 5
+num 0 res 0 check 0
+num 3 res 1 check 1
+num 9 res 1 check 2
+num 1 res 1 check 1
+
+**Testing correct implementation **
+-------------------------------------
+
+num 5 res 5 check 5
+num 0 res 0 check 0
+num 3 res 1 check 1
+num 9 res 2 check 2
+num 1 res 1 check 1
+
+All test programs were handled correctly
+
+Overall Grade: PASSED
