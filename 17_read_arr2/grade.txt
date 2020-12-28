@@ -1,0 +1,9 @@
+Grading at Mon Dec 28 17:58:43 UTC 2020
+Attempting to compile test.c
+gcc -o test -pedantic -std=gnu99 -Wall -Werror=return-type test.c
+compiled
+Line_1_did_not_match
+Your file did not match the expected ouput
+Your output did not match what we expected.
+
+Overall Grade: F
