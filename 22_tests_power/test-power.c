@@ -4,7 +4,7 @@ unsigned power (unsigned x, unsigned y);
 
 void check(unsigned res1, unsigned res2)
 {
-      // printf("%d %d\n",res1, res2);
+       printf("%d %d\n",res1, res2);
 	if(res1 != res2)
 	{
 		exit(EXIT_FAILURE);
